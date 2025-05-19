@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vaishnavi Manikeri Portfolio</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #111;
+      color: #fff;
+      scroll-behavior: smooth;
+    }
+    .navbar {
+      background-color: #1e1e1e;
+      padding: 1rem;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    }
+    .navbar a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      transition: all 0.3s ease;
+    }
+    .navbar a:hover,
+    .navbar a.active {
+      border-bottom: 2px solid #a47aff;
+      color: #a47aff;
+    }
+    .main {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 2rem;
+      max-width: 1200px;
+      margin: auto;
+      animation: fadeIn 1.2s ease-in-out;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .sidebar {
+      flex: 1;
+      min-width: 250px;
+      padding: 2rem;
+      background-color: #1c1c1c;
+      text-align: center;
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(255, 255, 255, 0.05);
+    }
+    .sidebar img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #a47aff;
+      margin-bottom: 1rem;
+      transition: transform 0.3s ease;
+    }
+    .sidebar img:hover {
+      transform: scale(1.05);
+    }
+    .sidebar h1 {
+      font-size: 1.8rem;
+      margin: 0.5rem 0;
+    }
+    .sidebar p {
+      background-color: #a47aff;
+      display: inline-block;
+      padding: 0.4rem 1rem;
+      border-radius: 20px;
+      color: #fff;
+      font-weight: bold;
+      margin: 0.5rem 0 1.5rem;
+      box-shadow: 0 2px 6px rgba(164, 122, 255, 0.4);
+    }
+    .sidebar strong {
+      display: block;
+      margin-top: 1rem;
+      font-weight: 600;
+    }
+    .content {
+      flex: 3;
+      padding: 2rem;
+    }
+    h2 {
+      color: #a47aff;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      border-bottom: 1px solid #333;
+      padding-bottom: 0.5rem;
+      animation: fadeIn 1s ease-in-out;
+    }
+    .card {
+      background-color: #1c1c1c;
+      padding: 1.5rem;
+      border-radius: 10px;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 16px rgba(164, 122, 255, 0.3);
+    }
+    .card h3 {
+      color: #a47aff;
+    }
+    ul {
+      padding-left: 1.2rem;
+    }
+    .highlight {
+      color: #a47aff;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="navbar">
+    <a href="#contact">Contact</a>
+    <a href="#about">Summary</a>
+    <a href="#skills">Skills</a>
+    <a href="#education">Education</a>
+    <a href="#projects">Projects</a>
+    <a href="#experience">Experience</a>
+    <a href="#training">Training</a>
+    <a href="#languages">Languages</a>
+  </div>
+  <div class="main">
+    <div class="sidebar">
+      <img src="avtar.png" alt="Vaishnavi Manikeri">
+      <h1>Vaishnavi Manikeri</h1>
+      <p>AI & DS Student | Python Developer</p>
+      <strong id="contact">Email:</strong> your.email@example.com
+      <strong>Phone:</strong> 8237370045
+      <strong>Linkedin account:</strong>https://www.linkedin.com/in/vaishnavi-manikeri-39715b290/
+      <strong>Github account:</strong>https://github.com/VaishnaviManikeri
+      <strong>Location:</strong> Ichalkaranji, Kolhapur
+    </div>
+    <div class="content">
+      <section id="about">
+        <h2>Summary</h2>
+        <p>Final year B.Tech student specializing in Artificial Intelligence and Data Science. Currently working as a Python Developer Intern at SPCL Pvt Ltd Pune. Adept in building intelligent systems and full-stack applications. Passionate about solving real-world problems with AI technologies.</p>
+      </section>
+
+      <section id="skills">
+        <h2>Skills</h2>
+        <p>Python, HTML, CSS, JavaScript, Flask, Django, MySQL, MongoDB, React, Node.js, REST APIs, Git</p>
+      </section>
+
+      <section id="education">
+        <h2>Education</h2>
+        <ul>
+          <li>B.Tech in Artificial Intelligence and Data Science, Sharad Institute of Technology College of Engineering, Yadrav – CGPA: 7.72</li>
+          <li>HSC – 89.50%</li>
+          <li>SSC – 79.80%</li>
+        </ul>
+      </section>
+
+      <section id="projects">
+        <h2>Projects</h2>
+        <div class="card">
+          <h3>AI System for Blind Person</h3>
+          <p>Developed a system using ML and Raspberry Pi with webcam to detect objects and provide voice-based feedback. It is limited to predefined objects stored in the dataset file.</p>
+          <p><strong>Skills:</strong> Machine Learning, Python</p>
+        </div>
+        <div class="card">
+          <h3>Matrix Calculator using C</h3>
+          <p>Created a matrix calculator in C supporting operations like addition, subtraction, multiplication, and transpose. Focused on computational accuracy and usability.</p>
+        </div>
+        <div class="card">
+          <h3>Object Detection Using ML</h3>
+          <p>Implemented object detection using CNNs for real-time applications including surveillance and smart systems, with custom datasets and pre-trained models.</p>
+          <p><strong>Skills:</strong> Machine Learning</p>
+        </div>
+        <div class="card">
+          <h3>Student Management System using Java</h3>
+          <p>Developed a student data management application using Java and JDBC for operations like enrollment, attendance, and grade tracking.</p>
+        </div>
+      </section>
+
+      <section id="experience">
+        <h2>Professional Experience</h2>
+        <ul>
+          <li>Walfox Pvt. Ltd, Kolhapur – Front-end Development Intern</li>
+          <li>Stormsofts Pvt. Ltd, Ichalkaranji – JavaScript-based UI Intern</li>
+          <li>Logibit Pvt. Ltd, Sangli – Machine Learning Intern</li>
+          <li>Walstar Pvt. Ltd, Kolhapur – Python Developer Intern</li>
+          <li>SPCL Infotech Services Pvt. Ltd, Pune – Python Full Stack Developer Intern</li>
+        </ul>
+      </section>
+
+      <section id="training">
+        <h2>Training & Workshops</h2>
+        <ul>
+          <li>Java Programming with JDBC (Oct 2023 - Jan 2024)</li>
+          <li>Internet of Things (13/09/2023 - 18/09/2023)</li>
+          <li>Data Science and Analytics (01/01/2025 - 22/01/2025)</li>
+        </ul>
+      </section>
+
+      <section id="languages">
+        <h2>Languages</h2>
+        <p>English, Hindi, Marathi, Kannada</p>
+      </section>
+    </div>
+  </div>
+</body>
+</html>
